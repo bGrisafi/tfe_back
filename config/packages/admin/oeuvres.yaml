@@ -1,0 +1,14 @@
+easy_admin:
+    entities:
+        oeuvres:
+            class: App\Entity\Oeuvres
+            form:
+                fields:
+                    - { property: 'nom_fr', label: 'Nom Francais' }
+                    - { property: 'nom_en', label: 'Nom Anglais' }
+                    - { property: 'description_fr',label: 'Description Francaise',type: 'fos_ckeditor' }
+                    - { property: 'description_en',label: 'Description Anglaise', type: 'fos_ckeditor' }
+                    - { property: 'illustration',label: 'Illustration' }
+                    - { property: 'artiste', label: 'Artiste' }
+                    - { property: 'categorie', label: 'Catégorie' }
+                    - { property: 'dateAjout' }
